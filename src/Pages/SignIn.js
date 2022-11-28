@@ -21,7 +21,7 @@ export default function SignIn() {
         setWaiting(true);
         signIn(signinform).then((res) => {
             setUsertoken(res.data);
-            navigate('/wallet');
+            navigate('/home');
         })
         .catch((error)=>{
             setWaiting(false);
